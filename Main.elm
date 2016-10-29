@@ -9,33 +9,26 @@ main =
 
 -- MODEL
 
-type alias Model = Int
+type alias Model = String
 
 model : Model
 model =
-  0
+  "smiley"
 
 
 -- UPDATE
 
-type Msg = Increment | Decrement
+type Msg = Toggle
 
 update : Msg -> Model -> Model
 update msg model =
   case msg of
-    Increment ->
-      model + 1
-
-    Decrement ->
-      model - 1
-
+    Toggle ->
+        "poop"
 
 -- VIEW
 
 view : Model -> Html Msg
 view model =
   div []
-    [ button [ onClick Decrement ] [ text "-" ]
-    , div [] [ text (toString model) ]
-    , button [ onClick Increment ] [ text "+" ]
-    ]
+    [ div [onClick Toggle] [ text model ] ]
