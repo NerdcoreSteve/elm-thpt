@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/NerdcoreSteve/elm-thpt/issues"
   },
-  "homepage": "https://github.com/NerdcoreSteve/elm-thpt#readme"
+  "homepage": "https://github.com/NerdcoreSteve/elm-thpt#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6"
+  }
 }
