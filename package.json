@@ -4,8 +4,7 @@
   "description": "a silly elm app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "elm-make Main.elm"
+    "build": "elm-make Main.elm --output=public/main.js"
   },
   "repository": {
     "type": "git",
